@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+//mi primer cambio
     
     @IBOutlet weak var dadoIzquierda: UIImageView!
     @IBOutlet weak var dadoDerecha: UIImageView!
