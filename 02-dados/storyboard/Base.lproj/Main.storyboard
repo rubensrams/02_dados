@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2_dados" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondocasino" translatesAutoresizingMaskIntoConstraints="NO" id="dXF-Zc-pdj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGOCASINO" translatesAutoresizingMaskIntoConstraints="NO" id="AbH-lz-XVp">
+                                <rect key="frame" x="16" y="25" width="320" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="4H3-Gv-ueg"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="E2e-Gl-dmJ">
+                                <rect key="frame" x="12" y="176.5" width="296" height="127"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dado1" translatesAutoresizingMaskIntoConstraints="NO" id="0mE-kN-lOB">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="127" id="3cC-DG-AQI"/>
+                                            <constraint firstAttribute="width" constant="127" id="cay-zn-Npr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dado2" translatesAutoresizingMaskIntoConstraints="NO" id="0NT-6J-sPP">
+                                        <rect key="frame" x="169" y="0.0" width="127" height="127"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="127" id="MRc-pP-TK6"/>
+                                            <constraint firstAttribute="height" constant="127" id="bC5-Qz-144"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiQ-Me-GcE">
+                                <rect key="frame" x="20" y="353.5" width="280" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="exg-xe-1s2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Tirar los dados">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="giraDadosAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sq1-1l-bQi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dXF-Zc-pdj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6DA-jZ-gVU"/>
+                            <constraint firstItem="E2e-Gl-dmJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AAP-jd-B0f"/>
+                            <constraint firstItem="E2e-Gl-dmJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Df0-Qi-GrL"/>
+                            <constraint firstItem="dXF-Zc-pdj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IKg-D9-lfK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wiQ-Me-GcE" secondAttribute="trailing" constant="20" id="Lq9-Wv-HZF"/>
+                            <constraint firstItem="wiQ-Me-GcE" firstAttribute="top" secondItem="E2e-Gl-dmJ" secondAttribute="bottom" constant="50" id="UdG-u5-udb"/>
+                            <constraint firstItem="AbH-lz-XVp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="25" id="V4K-QC-LWC"/>
+                            <constraint firstAttribute="bottom" secondItem="dXF-Zc-pdj" secondAttribute="bottom" id="gD6-KC-mJT"/>
+                            <constraint firstItem="dXF-Zc-pdj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jFl-z0-6h7"/>
+                            <constraint firstItem="AbH-lz-XVp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oVh-AZ-1rc"/>
+                            <constraint firstItem="AbH-lz-XVp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="16" id="si4-Gs-8mA"/>
+                            <constraint firstItem="wiQ-Me-GcE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tLe-Mb-pLR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dadoDerecha" destination="0NT-6J-sPP" id="ezN-RW-Iev"/>
+                        <outlet property="dadoIzquierda" destination="0mE-kN-lOB" id="5fn-Hb-jaZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LOGOCASINO" width="335" height="224.5"/>
+        <image name="dado1" width="69" height="68"/>
+        <image name="dado2" width="69" height="68"/>
+        <image name="fondocasino" width="95.5" height="58.5"/>
+    </resources>
+</document>
